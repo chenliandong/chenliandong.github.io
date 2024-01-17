@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>信息展示网页</title>
+ <style>
+     body {
+         font-family: Arial, sans-serif;
+         line-height: 1.6;
+         margin: 0;
+         padding: 0;
+     }
+
+     header {
+         background-color: #f1f1f1;
+         padding: 20px;
+         text-align: center;
+     }
+
+     h1 {
+         color: #333;
+         font-size: 24px;
+         margin: 0;
+     }
+
+     form {
+         display: flex;
+         flex-wrap: wrap;
+         justify-content: space-between;
+         margin: 20px 0;
+     }
+
+     label {
+         font-size: 16px;
+         margin-right: 10px;
+     }
+
+     input[type="checkbox"] {
+         margin-right: 10px;
+     }
+
+     button {
+         background-color: #4CAF50;
+         border: none;
+         color: white;
+         padding: 10px 20px;
+         text-align: center;
+         text-decoration: none;
+         display: inline-block;
+         font-size: 16px;
+         margin: 4px 2px;
+         cursor: pointer;
+     }
+
+     button:hover {
+         background-color: #45a049;
+     }
+
+     main {
+         position: relative;
+     }
+
+     footer {
+         position: absolute;
+         bottom: 0;
+         left: 50%;
+         transform: translateX(-50%);
+     }
+ </style>
+</head>
+<body>
+ <header>
+     <h1>信息展示网页</h1>
+ </header>
+ <main>
+     <form>
+         <label for="option1">选项1：</label>
+         <input type="checkbox" id="option1" name="options" value="1">
+         <label for="option1">好好学习</label><br>
+
+         <label for="option2">选项2：</label>
+         <input type="checkbox" id="option2" name="options" value="2">
+         <label for="option2">天天向上</label><br>
+
+         <label for="option3">选项3：</label>
+         <input type="checkbox" id="option3" name="options" value="3">
+         <label for="option3">认真学习</label><br>
+
+         <button onclick="alert('您选择的选项为：' + getSelectedOptions())">确定</button>
+     </form>
+ </main>
+ <footer>
+     <button onclick="alert('这是一个底部下来的按钮！')">确定</button>
+ </footer>
+</body>
+</html>
+
